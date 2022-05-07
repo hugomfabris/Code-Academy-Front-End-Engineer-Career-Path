@@ -1,0 +1,29 @@
+* {
+    margin: auto;
+    background-color: #C1DFF0;
+    /*border: 1px solid red;*/
+}
+
+h1 {
+    text-align: center;
+    color: #1F5470;
+    padding: 30px;
+    
+}
+
+table {
+    border: 6px solid #1F5470;
+    text-indent: initial;
+    border-collapse: separate;
+    border-spacing: 2px;
+
+}
+
+thead, th, td  {
+    border-top: 1px solid #7CB9DB;
+    color: #062637;
+}
+
+td {
+    padding: 2px;
+}
