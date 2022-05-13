@@ -37,18 +37,35 @@ const pAequorFactory = (specimenNum , dna) => {
        }  
        mutateDna.splice(randomIndex, 1, target())   
        return  mutateDna
+    },
+    compareDNA(otherDna) {
+      let count = 0;
+      for (let i = 0; i < dna.length; i++) {
+        if (otherDna['dna'][i] === dna[i]) {
+          count += 1;
+        }
+      }
+      let percentage = Math.round(count / dna.length * 100);
+
+      return `The species has ${percentage}% in common`
+    },
+    willLikelySurvive() {
+      let dnaCopy = dna.slice();
+      return dnaCopy.filter(item => item == 'C' || item == 'G').length >= 9
     }
   }
 }
 
+//Generate 30 species
 
-let ourDna = pAequorFactory(1, [
-  'T', 'C', 'A', 'C',
-  'T', 'A', 'A', 'A',
-  'T', 'A', 'G', 'T',
-  'C', 'C', 'T'
-]);
+let species = [];
+let i = 1
+while (species.length <= 30) {
+  let temp = pAequorFactory(i, mockUpStrand());
+  if (temp.willLikelySurvive()) {
+    species.push(temp);
+    i++
+  }
+}
 
-console.log(ourDna);
-
-console.log(ourDna.mutate());
+console.log(species);
