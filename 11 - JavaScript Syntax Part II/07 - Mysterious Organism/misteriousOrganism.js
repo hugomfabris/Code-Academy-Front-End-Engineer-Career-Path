@@ -38,6 +38,7 @@ const pAequorFactory = (specimenNum , dna) => {
        mutateDna.splice(randomIndex, 1, target())   
        return  mutateDna
     },
+    //This method takes another DNA as an argument and show us the percentage in common with our original DNA 
     compareDNA(otherDna) {
       let count = 0;
       for (let i = 0; i < dna.length; i++) {
@@ -49,6 +50,7 @@ const pAequorFactory = (specimenNum , dna) => {
 
       return `The species has ${percentage}% in common`
     },
+    //This last method will return us a boolean indicating if the bases C and G correspond to at leats 60% of the bases of the given specie
     willLikelySurvive() {
       let dnaCopy = dna.slice();
       return dnaCopy.filter(item => item == 'C' || item == 'G').length >= 9
@@ -56,7 +58,7 @@ const pAequorFactory = (specimenNum , dna) => {
   }
 }
 
-//Generate 30 species
+//Generating 30 species
 
 let species = [];
 let i = 1
