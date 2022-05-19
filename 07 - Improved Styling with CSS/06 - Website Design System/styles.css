@@ -1,0 +1,94 @@
+/* General */
+
+body {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Noto sans', 'Lato', sans-serif;
+}
+div {
+    display: block;
+}
+h1, h2 {
+    font-family: 'Amiri' 'Lato', sans-serif;
+    font-size: 40px;
+    padding: 0px auto 10px;
+}
+h2 {
+    font-size: 27px;
+}
+p {
+    font-family: 'Noto sans', 'Lato', sans-serif;
+}
+.contents {
+    padding: 10px;
+    margin: 20px 50px;
+    border: 2px solid #D4DAED;
+    border-radius: 3px;
+}
+ul {
+    display: block;
+}
+
+/* Colors */
+
+.colors-container {
+    width: 100%
+}
+.colors {
+    display: inline-block;
+    width: 16.6667%;
+    height: 100px;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    border-radius: 5px;
+}
+#cadet {
+    background-color: #5D737E;
+    color: white;
+}
+#green_sheen {
+    background-color: #64B6AC;
+    color: white;
+}
+#celeste {
+    background-color: #C0FDFB;
+    color: black;
+}
+#magic_mint {
+    background-color: #A3FEE3;
+    color: black;
+}
+#aquamarine {
+    background-color: #85FFCA;
+    color: black;
+}
+
+/* Fonts */
+
+.font-panel {
+    width: 45%;
+    display: inline-block;
+}
+.noto {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+}
+.amiri {
+    font-family: 'Amiri', sans-serif;
+    font-size: 20px;
+}
+.cairo {
+    font-family: 'Cairo', sans-serif;
+    font-size: 20px;
+}
+.teko {
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+}
+
+/* Text */
+
+#text-container {
+    text-align: left;
+    justify-content: left;
+}
