@@ -1,0 +1,184 @@
+/* General */
+html {
+    background-color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    opacity: 0.9;;
+}
+
+/* Nav section */
+
+nav {
+    display: inline-flex;
+    position: fixed;
+    width: 100%;
+    height: 69px;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    align-items: center;
+    top: 0px;
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#navlist {
+    display: flex;
+    position: fixed;
+    list-style: none;
+    right: 10px;
+}
+
+#navlist li {
+    margin: 10px;
+}
+
+/* Mission section*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mission {
+    position: relative;
+    width: 1400px;
+    height: 700px;
+    background-color: black;
+    margin: auto;
+    margin-top: 100px;
+    z-index: 1;
+}
+
+#mission-background {
+    position: relative;
+    object-fit: cover;
+    width: 1400px;
+    height: 700px;
+    z-index: 1;
+}
+
+#mission_text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    top: 50%;
+    background-color: black;
+    z-index: 2;
+}
+#mission_text > h2, h4 {
+    margin: 5px 5px;
+    text-align: center;
+}
+
+/* Info section*/
+
+#div_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 800px;
+} 
+
+#info_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 300px;
+    height: 200px;
+    margin: 20px 10px;
+    padding: 5px 4px;
+}
+
+.products_img {
+    object-fit: cover;
+}
+
+#info > div > h2, h3 {
+    margin: 20px auto;
+}
+
+/* Location section */
+
+#locations {
+    position: relative;
+    height: 1100px;
+}
+
+#locations_div {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+#locations_background {
+    position: relative;
+    top: 2%;
+    width: 1400px;
+    height: 1000px;
+    z-index: 1;
+}
+
+#locations_title {
+    position: absolute;
+    top: 5%;
+    left: 46%;
+    z-index: 2;
+}
+
+#adress_div {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    top: 15%;
+    width: 980px;
+    z-index: 3;
+
+}
+.adress {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    width: 300px;
+}
+/* Footer */
+
+footer {
+    position: relative;
+    height: 250px;
+}
+
+footer > h2, h5, p {
+    margin: 15px;
+}
+
+#copyright {
+    position: absolute;
+    left: 25px;
+    bottom: 2%;
+}
+
